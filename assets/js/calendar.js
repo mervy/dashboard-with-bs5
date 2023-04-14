@@ -29,11 +29,11 @@ class Calendar {
         let calendarHtml = `
 <div class="calendar fs-4 col-5 text-center mx-auto">
 <div class="calendar-header mb-3">
-  <button class="prev-year btn btn-danger px-4">&lt;&lt;</button>
-  <button class="prev-month btn btn-danger px-4">&lt;</button>
+  <button class="prev-year btn btn-danger px-3">&lt;&lt;</button>
+  <button class="prev-month btn btn-danger px-3">&lt;</button>
   <span>${monthName} ${year}</span>
-  <button class="next-month btn btn-danger px-4">&gt;</button>
-  <button class="next-year btn btn-danger px-4">&gt;&gt;</button>
+  <button class="next-month btn btn-danger px-3">&gt;</button>
+  <button class="next-year btn btn-danger px-3">&gt;&gt;</button>
 </div>
 <table class="table table-striped">
  <thead class="table-dark">
@@ -49,7 +49,6 @@ class Calendar {
   </thead>
   <tbody>
 `;
-
         let dayOfMonth = 1;
         let dayOfWeek = new Date(year, this.currentDate.getMonth(), dayOfMonth).getDay();
         let isFirstRow = true;
